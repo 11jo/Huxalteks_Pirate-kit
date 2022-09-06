@@ -1,0 +1,301 @@
+@1000 = ~Necessite l'installation du composant Pirate Kit~
+@1 = ~Fléau Kuo-Toa~
+@2 = ~Corsaire~
+@3 = ~Capitaine corsaire~
+@4 = ~Capitaine Akbet-Khrul~
+@460 = ~Carte mystérieuse~
+@461 = ~Carte de Lopango, sud de Maztica~
+@4600 = ~Trouvée au fond de votre coffre, cette carte poussiéreuse représente une terre que vous ne connaissez pas. Une croix d'encre noire semble indiquer un emplacement particulier au centre de la carte.~
+@4601 = ~Après une minutieuse observation, vous parvenez à lire une écriture à demi effacée par le temps, dans la partie inférieure de la carte.
+Il est écrit : "LOPANGO, Terre de Feu".
+C'est alors que le souvenir d'un fastidieux cour de géographie enseigné pendant votre enfance à Chateausuif refit surface dans votre esprit. Lopango est une terre incroyablement lointaine, située au sud du continent Maztica, d'où est originaire votre perroquet. On raconte que Lopango est habité par des groupements d'êtres sauvages appelés "peuples verts".
+La croix noire, au centre de la carte, indique certainement l'emplacement d'un trésor.
+Seulement, pour vous y rendre, il vous faudrait braver pendant des mois la Mer Inviolée, et une telle expédition ne se prépare pas en un seul jour.
+Vous décidez de remettre ce projet à plus tard, en prenant soin de bien conserver la carte.~
+@5 = ~Esprit du coffre~
+@6 = ~Coco~
+@676 = ~Comme tout pirate qui se respecte, vous portez en permanence ce perroquet sur votre épaule.
+Provenant des denses jungles du continent Maztica, le volatile fut récupéré par Gorion, votre père adoptif, lors d'une foire aux produits exotiques de la ville de Murann.
+Niché en permanence près de votre oreille gauche, ce très bavard mais non moins perspicace animal a été habitué à vous pendant de nombreuses années; et malgré son insupportable tendance à débiter des phrases à répétition, vous demeurez certain que cet oiseau aime autant votre propre personne que l'aventure dans laquelle vous l'avez plongé.
+
+Spécial : Placé dans les objets rapides, Coco peut vous rapporter des objets précieux et explorer les nouvelles zones à partir du niveau 14.
+
+Attention : La durée de l'absence de Coco peut énormément varier. Lorsque l'oiseau aura trouvé un objet, il reviendra dans la zone où vous l'avez laissé.~
+@462 = ~Fruit exotique~
+@4602 = ~Ce fruit peu commun dans cette partie de Féérune rayonne de couleurs exotiques et de senteurs sucrées.
+PARAMETRE : + 1 point de vie par fruit mangé~
+@463 = ~Pierre de Selune~
+@4603 = ~Il s'agit d'un fragment de roche provenant du satellite de la planète Abeir-Toril, Selune. La rareté d'une telle pierre dans les royaumes ne fait évidemment aucun doute.~
+@464 = ~Vieille clé rouillée~
+@4604 = ~Cette clé poussiéreuse est littéralement rongée par son âge; elle n'a visiblement plus d'utilité car la serrure qu'elle est sensée débloquer vous est inconnue.~
+@465 = ~Représentation d'Halruaa~
+@4605 = ~Cette oeuvre représente une vue d'artiste de la région de toutes les merveilles : Halruaa ; célèbre pour ses puissants magiciens et ses fameux navires volants.
+
+Halruaa fut fondé il y a plusieurs siècles par des magiciens fuyant les Phaerimm vers ce qui allait devenir le désert d'Anauroch. Les premiers magiciens arrivèrent à bord de vaisseaux aériens extraordinaires inventés par les Nethérisses, et découvrirent une terre riche et éblouissante peuplée uniquement de bergers et de larges troupeaux d'aurochs et de rothays sauvages. Ils décidèrent de s'y arrêter et de résister aux Phaerimm, si toutefois c'était nécessaire. Ce ne fut pas le cas, mais depuis cette époque Halruaa a dû se défendre contre les attaques de tous ses voisins.
+Des siècles durant, le Dambrath attaqua et lança des raids à répétition sur les ports et les frontières de Halruaa. Une fois, conduits par un barbare immunisé contre la magie, les Dambraii occupèrent tout le pays au sud du Lac Halruaa. Ils furent vaincus par le grand archimage Mycontil, qui tua le chef barbare. Quarante mille Dambraii attaquèrent et furent arrêtés par 500 Halruans. Plus de 200 magiciens de Halruaa, dont Mycontil, périrent au combat.
+La dernière attaque contre Halruaa remonte à moins d'un siècle. Elle fut orchestrée par Lapaliiya, un roi aux appétits de pouvoir démesurés, qui attaqua par la Passe de Telath. Il s'était allié aux bandits du désert. Mais cette fois-ci, les Halruans avaient pu mettre une plus grande force en ligne, y compris des hommes en armes et des magiciens dans leurs vaisseaux célestes. Les assaillants furent aisément déroutés.
+Halruaa souffrit également des affres d'une guerre civile il y a environ cinq cents ans, lorsque des mages encouragèrent l'expérimentation de nouvelles magies, que même le Nethéril n'approuvait pas. On chassa les hors-la-loi de la région, mais ces derniers fondèrent le pays de Thay, c'est du moins ce qu'on raconte à Halruaa.
+Depuis lors, Halruaa connaît la paix (aucune guerre ne lui a été déclarée), même si la région continue de subir les raids des pirates Dambraii, des bandits du désert, des sauvages des Jungles Mhaïr, sans compter tous les autres pirates, pillards ou magiciens insatiables qui pensent que la magie et les richesses poussent sur les arbres de Halruaa.
+Ces raids incessants ont rendu les Halruans très méfiants, belliqueux et traditionalistes. Les gens disent que les magiciens les ont toujours commandés ; il n'y a donc aucune raison pour que cela s'arrête.~
+@466 = ~Tricorne de corsaire~
+@4606 = ~Spécial : Immunité à l'aveuglement
+
+
+Utilisable uniquement par : voleurs non loyaux~
+@467 = ~Masque de Hathran~
+@468 = ~Masque Hathran des flammes~
+@4607 = ~Les Hathrans de Rashéménie sont réputées pour les masques, souvent magiques, qu'elles portent lorsqu'elles voyagent ou combattent.
+Ce masque en particulier, par les lueurs écarlates qu'il dégage, rayonne d'une aura brûlante et suffoquante.~
+@4608 = ~Les Hathrans de Rashéménie sont réputées pour les masques, souvent magiques, qu'elles portent lorsqu'elles voyagent ou combattent.
+Ce masque en particulier, par les lueurs écarlates qu'il dégage, rayonne d'une aura brûlante et suffoquante.
+
+PARAMETRES : Immunité totale au feu
+
+Inutilisable par : Personnages d'alignement bon~
+
+@469 = ~Corne de l'entraide fraternelle~
+@4609 = ~Voici la corne d'appel que vous avez reçu en héritage en même temps que votre coffre. Il atteste de votre capacité à vous comporter comme un véritable pirate.
+Il s'agit à l'origine de l'une des cornes qui permettait aux flibustiers de la côte des épées de lutter de façon plus efficace contre la société du Kraken et des enfants d'Umberlee.
+
+PARAMETRE : Cette corne permet de convoquer, en fonction de votre niveau, un équipage plus ou moins expérimenté et nombreux de pirates et corsaires assoiffés de combats et de fortune.
+
+Utilisable uniquement par : Capitaines Pirates et quelques rares voleurs non loyaux~
+
+@7 = ~Main gauche inutilisable~
+@70 = ~Ma main !! Ma main est totalement paralysée... Je ne peux plus m'en servir !~
+@71 = ~Malus à la Classe d'Armure~
+@72 = ~Coco peut désormais explorer les zones lorsqu'il part à la recherche d'objets précieux.~
+@73 = ~Amélioration du perroquet~
+@8 = ~Malédiction du pirate~
+@9 = ~Chance du pirate~
+@10 = ~Abordage !~
+@11 = ~Fléau des mers~
+@12 = ~Equipage corsaire~
+@122 = ~Vous ne disposez pas du niveau requis pour appeler des alliés mercenaires.~
+@13 = ~Réveil d'Akbet-Khrul~
+@14 = ~Acquisition de Coco le perroquet~
+@15 = ~Acquisition d'un vieux coffre~
+//@16 = ~Coco a rapporté un objet précieux~//
+@17 = ~Coffre au trésor~
+@170 = ~Il s'agit de votre coffre de pirate, dans lequel vous stockez votre réserve de pièces d'or. Vous pouvez également y ranger tout objet de valeur en votre possession.
+La particularité de ce coffre réside dans le fait qu'il s'ouvre par l'intermédiaire d'un esprit gardien, sans doute un ancien grand pirate des royaumes.
+Vous avez hérité de ce coffre peu avant votre départ précipité de Chateau-Suif.
+
+Spécial : Placé dans les objets rapides, ce coffre vous permet d'invoquer l'esprit gardien et d'accéder au trésor.
+Si vous perdez ou jetez ce coffre, les pièces d'or qu'il contient seront confisquées par l'esprit gardien de façon permanente.~
+@171 = ~Coupe en or~
+@172 = ~Cette magnifique coupe tout en or massif vaut magnifestement beaucoup d'argent. Une chose est sûre, un trésor pareil ne peut être destiné à la vente. Il occuperait même une place de choix dans votre coffre... Où votre perroquet a-t'il pu trouver un tel objet, cela restera un mystère d'autant plus que ce maudit piaf n'est pas du tout décidé à cracher le morceau !~
+@18 = ~Main gauche blessée~
+@181 = ~Usée par les nombreux combats acharnés que vous avez livrés, votre main gauche est désormais hors d'usage.
+Si un simple sort de soin des blessures critiques pourrait faire disparaître ce handicap, vous refusez néanmoins toute aide de la part d'un lanceur de sort,  la fierté qui anime le pirate que vous êtes ayant, pour ce cas précis, pris le dessus sur votre propre santé.
+Bien qu'inutile et très difficilement maniable lors des batailles, vous optez de temps en temps pour un esthétique crochet de pirate dissimulant ainsi complètement la main blessée.~
+@19 = ~pirate~
+@20 = ~Pirate~
+@21 = ~PIRATE : Véritables maîtres des mers et des océans, ces marins sans peurs ni scrupules, sont non seulement de redoutables guerriers, mais également de bons voleurs.
+
+Avantages:
+- Bonus aux dégats et au toucher de +1 aux niveaux 2, 19 et 28
+- Acquiert la capacité spéciale : "Abordage !" aux niveaux 9 et 17; améliorant temporairement ses caractéristiques de combat
+- Acquiert "Fléau des mers" au niveau 5 (don de la déesse Umberlee), permettant de bénéficier de l'aide d'un monstre Kuo-toa venu tout droit du plan élémentaire de l'eau
+- Peut constituer un équipage de pirates de plus en plus conséquent dès le niveau 13 et tous les 2 niveaux ensuite (dont "Akbet-Khrul", le maléfique pirate de la côte des épées à partir du niveau 24)
+- Peut atteindre le plus haut degré de maîtrise avec le cimeterre
+- Coco le perroquet peut rapporter des richesses à son propriétaire et explorer les zones pour vous dès le niveau 14
+- Possède un coffre au trésor faisant office de réserve d'or et permettant également de stocker toutes sortes d'objets
+
+Inconvénients:
+- Du niveau 8 au niveau 21, le pirate fait baisser la réputation du groupe de 1 tous les 3 niveaux gagnés
+- Ne peut plus utiliser sa main gauche ni d'armes à deux mains à partir du niveau 9
+- Alterne "Malédiction du pirate" et "Chance du pirate" à chaque niveau; alternant malus et bonus aux jets de sauvegarde
+- Pénalité de 1 à la CA
+- Nécessite 17 en constitution et 11 en force
+- Ne peut pas être d'alignement LOYAL, ni d'alignement NEUTRE-BON
+- Ne peut poser de pièges
+- Possède les capacités de haut niveau des guerriers et non des voleurs
+- Aucune possibilité de jumelage
+- Pénalité de -4 en charisme
+- Ne peut pas se spécialiser dans les armes à projectile
+
+Don régional:
+Selon l'origine géographique du pirate (choisie à l'installation du kit), celui-ci dispose de l'un de ces avantages supplémentaires:
+-Pirate des îles Nélanthères :
+Attaque massive : Lorsqu'il appelle des mercenaires pirates, ceux-ci arrivent avec une recrue supplémentaire.
+
+-Pirate de la mer intérieure (mer des étoiles déchues) :
+Volonté farouche : +10% de résistance magique.
+
+-Pirate des royaumes insulaires de Kara-Tur :
+Intrépide et résistant : +12PV de façon permanente.
+
+-Pirate de Zakhara :
+Maîtrise supérieure du cimeterre (6ème étoile de compétence) : Pour les pirates des sables brûlants de Zakhara, les cimeterres ordinaires (non enchantés) sont maniés avec une telle maîtrise qu'ils sont considérés comme des armes à deux mains +1, bénéficiant ainsi des mêmes avantages en terme de dégats, sans l'inconvénient de la lenteur due au poids de ces dernières.
+~
+
+@1060 = ~Race du perroquet Coco~
+@1061 = ~Ara macao (rouge)
+~
+@1062 = ~Ara ararauna (vert-bleu-jaune)
+~
+
+@9999 = ~Dons innés régionaux~
+@10000 = ~
+Pirate des îles Nélanthères :
+Attaque massive : Lorsqu'il appelle des mercenaires pirates, ceux-ci arrivent avec une recrue supplémentaire.
+~
+@10001 = ~
+Pirate de la mer intérieure (mer des étoiles déchues) :
+Volonté farouche : +10% de résistance magique.
+~
+@10002 = ~
+Pirate des royaumes insulaires de Kara-Tur :
+Intrépide et résistant : +12PV de façon permanente.
+~
+@10003 = ~
+Pirate de Zakhara :
+Maîtrise supérieure du cimeterre (6ème étoile de compétence) : Pour les pirates des sables brûlants de Zakhara, les cimeterres ordinaires (non enchantés) sont maniés avec une telle maîtrise qu'ils sont considérés comme des armes à deux mains +1, bénéficiant ainsi des mêmes avantages en terme de dégats, sans l'inconvénient de la lenteur due au poids de ces dernières.
+~
+@10033 = ~La longue lame simple et incurvée est la caractéristique des sabres et des cimeterres, bien qu'ils n'aient pas la même origine dans Féérune. Alors que le sabre était fait essentiellement pour les cavaliers, notamment pour sa polyvalence, le cimeterre est issu d'une influence plus orientale. Le "shamshir", comme on l'appelait au début, est plus grand et plus recourbé, et il s'effile sur une pointe très allongée.
+Ce cimeterre en particulier est béni par Hajama, dieu de la guerre du Zakhara, à partir de l'instant où il est utilisé par un natif de ce continent.
+
+PARAMETRES :
+
+Dégâts :  1D8
+Type de Dégâts :  tranchant
+Poids : 4
+Facteur de Vitesse : 2 (Pirate de Zakhara : Maîtrise supérieure)
+Type de compétence : cimeterre/Wakizashi/Ninja-To
+Type : arme à 1 main
+Force nécessaire : 10
+Utilisable uniquement par :
+Pirates de Zakhara (ceux-ci n'ont pas pour coutume de prêter leur cimeterre)~
+@10034 = ~Cimeterre béni d'Hajama~
+
+@13462 = ~Epi de mais~
+@13463 = ~Cette plante, qu'Aolalitl nomme "maïs", est cultivée massivement sur les terres de Maztica.
+
+PARAMETRE : Soigne 5 PV par épi mangé~
+@13900 = ~Aolalitl~
+@13901 = ~Lit de coton~
+@13990 = ~pretresse de Qotal~
+@13991 = ~Pretresse de Qotal~
+@13992 = ~La fabriquation de ce PNJ n'est pas encore terminée~
+@13999 = ~PNJ Aolalitl : pretresse de QOTAL, quetes specifiques~
+//nouveaux sorts de Aolalitl:
+@14000 = ~Fraicheur~
+@14001 = ~Ce sort permet la création d'une zone de fraîcheur et d'eau pure qui protège le groupe du feu et de la secheresse.
+Immunité totale au feu pendant 7 rounds jusqu'au niveau 12 puis 20 rounds ensuite.~
+@14002 = ~Chaleur~
+@14003 = ~Ce sort permet à Aolalitl d'offrir une immunité totale au froid à un de ses alliés pendant 7 rounds jusqu'au niveau 12 puis 20 rounds ensuite.~
+@14004 = ~Elevation~
+@14005 = ~Ce sort crée un nuage de coton qui transporte chaque membre du groupe là où il le désire, évitant ainsi toute fatigue inutile.
+Pendant le transport, chacun régénère également 1PV toutes les 2 rounds.
+Attention : si un combat survient, le sort s'annule immédiatement.~
+@14006 = ~Bienveillance de Qotal~
+@14007 = ~Ce sort permet de soigner 2% des points de vie d'un allié par niveau du lanceur de sort (jusqu'au niveau 20).
+Exemble : si l'allié possède 30 points de vie à la base, et que Aolalitl est au niveau 7, celle-ci régénèrera 4 points de vie.~
+@14008 = ~Lumière intérieure~
+@14009 = ~Ce sort permet de découvrir l'aura maléfique de n'importe quelle créature. Toute créature mauvaise à portée du sort se met à rougeoyer pendant un bref instant. De plus, grâce à ce sort, une barrière magique se crée autour de la cible à 30 cm de distance. La barrière se déplace avec le bénéficiaire et a deux effets majeurs : d'abord, toute créature maléfique ou enchantée lançant une attaque contre la cible protégée reçoit un malus de -2 au jet d'attaque, et la cible bénéficie d'un bonus de +2 sur ses jets de sauvegarde.~
+@14010 = ~Don de soi~
+@14011 = ~Ce sort permet à Aolalitl de sacrifier 1 de ses PV de façon permanente et d'offrir cette énergie vitale à un de ses alliés; ce dernier verra ses PV augmentés de 5% de façon permanente, par l'intermédiaire du pouvoir insufflateur de vie de Qotal.~
+@14012 = ~Fertilité~
+@14013 = ~Grâce à ce sort, Aolalitl fait pousser un nombre variable d'épis de maïs destinés à la consommation.~
+
+@18000 = ~Immunité au feu et à la sècheresse~
+@18001 = ~Immunité au froid~
+@18002 = ~Perception et protection contre le mal~
+@18003 = ~Le sol est fertile : des épis de maïs ont été récoltés~
+@18004 = ~Les vertus énergétiques du maïs permettent de restaurer quelques points de vie~
+@18005 = ~Le sort d'élévation n'est pas encore dissipé~
+
+// WeiDU prompts
+@-1000= "Le mod %TP2_FILE_NAME% contient"
+@-1001= "composants optionnels distincts.
+Pour gagner du temps, vous pouvez choisir ce que vous souhaitez faire d'eux
+au niveau general plutot que de repondre aux questions pour chacun.
+"
+@-1002= "Que faut-il faire de tous les composants qui NE sont PAS ENCORE installes ?
+Les [I]nstaller, les [S]auter, dem[A]nder pour chacun ? "
+@-1003= "Que faut-il faire de tous les composants qui sont DEJA installes ?
+Les [R]einstaller, les s[U]pprimer, les [S]auter, dem[A]nder pour chacun ? "
+
+@-1004= "S'IL VOUS PLAIT, envoyez par e-mail le fichier"
+@-1005= "a"
+
+@-1006= "Installer le composant ["
+@-1007= "] ?
+[R]einstaller, co[N]server, s[U]pprimer ou [Q]uitter ? "
+@-1008= "] ?
+[I]nstaller, [N]e pas installer ou [Q]uitter ? "
+
+@-1009= "Entrez une partie du nom du module : "
+
+@-1010= "Reinstallation du composant ["
+@-1011= "] "
+@-1012= "Reinstallation dans la langue"
+
+@-1013= "Suppression de l'ancienne installation de ["
+@-1014= "] au prealable..."
+@-1015= "SUPPRESSION REUSSIE DE L'ANCIEN"
+
+@-1016= "Installation en cours"
+@-1017= "ERREUR pendant l'installation de ["
+@-1018= "], retour a l'etat anterieur"
+@-1019= "INSTALLATION REUSSIE"
+@-1020= "Saute"
+@-1021= "Suppression de ["
+@-1022= "] (composant #"
+@-1023= ")"
+@-1024= "SUPPRESSION REUSSIE DE ["
+
+@-1025= "] ?
+[R]einstaller, co[N]server, s[U]pprimer, [Q]uitter ou choisir un parmi :"
+@-1026= "] ?
+[N]e pas installer, [Q]uitter ou choisir un parmi :"
+@-1027= " (installe actuellement)"
+
+@-1028= "Souhaitez-vous afficher les composants de ["
+@-1029= "] ?
+[Y]Oui, [N]on ? "
+
+@-1030= "] ?
+choisir un parmi :"
+@-1031= "] ?
+[R]einstaller, co[N]server, [Q]uitter ou choisir un parmi :"
+@-1032= "INSTALLATION ECHOUEE A CAUSE D'ERREURS"
+@-1033= "INSTALLATION AVEC DES ALERTES"
+@-1034= "Souhaitez-vous afficher les instructions (ReadMe) ? [Y]Oui [N]on"
+@-1035= "Dans la langue"
+
+@-1036= "Saute le GROUPE ["
+@-1037= "] pour cause d'absence des pre-requis."
+
+@-1038= "dem[A]nder pour chaque composant, tout [S]auter, ou choisir une selection pre-definie :"
+@-1039= "dem[A]nder pour chaque composant, [R]einstaller la configuration courante, tout s[U]pprimer, tout [S]auter, ou choisir une selection pre-definie :"
+
+@-1040= "
+Veuillez choisir la langue dans laquelle vous souhaitez jouer au jeu.
+Si par la suite vous desirez jouer au jeu dans une langue differente, il vous
+faudra editer le fichier weidu.conf et reinstaller vos mods.
+"
+@-1041= "Tcheque"
+@-1042= "Allemand"
+@-1043= "Anglais"
+@-1044= "Espagnol"
+@-1045= "Francais"
+@-1046= "Italien"
+@-1047= "Polonais"
+@-1048= "Portugais"
+@-1049= "Turc"
+@-1050= "Japonais"
+@-1051= "Coreen"
+@-1052= "Chinois simplifie"
+@-1053= "Russe"
+@-1054= "Ukrainien"
+
+@-1060= "
+Ce jeu est disponible en plusieurs langues mais WeiDU ne sait pas laquelle a ete choisie quand ce mod a ete installe.
+
+Veuillez indiquer quelle langue du jeu a ete utilisee quand vous avez installe ce mod. Votre choix servira jusqu'a ce que WeiDU s'arrete mais ne sera pas memorise.
+"
+@-1061= "
+Utilisation de"
+@-1062= " et "

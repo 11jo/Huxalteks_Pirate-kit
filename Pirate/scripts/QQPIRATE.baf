@@ -1,0 +1,17 @@
+IF
+	Global("QQPIRATEHERE","GLOBAL",0)
+	GlobalTimerExpired("QQDELAYPIR","GLOBAL")
+THEN
+	RESPONSE #100
+		DisplayStringHead(Player1,@10101) // Que Tymora t'apporte chance et richesses l'ami !
+		CreateVisualEffectObject("SPDIMNDR",Myself)
+		DestroySelf()
+	RESPONSE #100
+		DisplayStringHead(Player1,@10102) // Nos chemins se recroiseront certainement frère aventurier !
+		CreateVisualEffectObject("SPDIMNDR",Myself)
+		DestroySelf()
+	RESPONSE #100
+		DisplayStringHead(Player1,@10103) // Retour au repère...
+		CreateVisualEffectObject("SPDIMNDR",Myself)
+		DestroySelf()
+END

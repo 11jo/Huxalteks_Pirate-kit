@@ -1,0 +1,8 @@
+IF
+Kit(Player1,QQCORSR)
+HasItem("SW1H20",Player1)
+THEN
+RESPONSE #100
+DisplayStringHead(Player1,@20)
+TakeItemReplace("QQSW1H20","SW1H20",Player1)
+END

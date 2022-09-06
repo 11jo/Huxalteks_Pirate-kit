@@ -1,0 +1,53 @@
+//Si le pirate jette son coffre, il n'a plus d'argent...
+IF
+Global("QQCOFFRE","GLOBAL",0)
+Kit(Player1,QQCORSR)
+!PartyHasItem("QQCOF")
+THEN
+RESPONSE #100
+TakePartyGold(2147483647)
+SetGlobal("QQCOFFRE","GLOBAL",1)
+Continue()
+END
+
+IF
+Global("QQCOFFRE","GLOBAL",1)
+Kit(Player1,QQCORSR)
+PartyHasItem("QQCOF")
+THEN
+RESPONSE #100
+SetGlobal("QQCOFFRE","GLOBAL",0)
+Continue()
+END
+
+
+//Coco pousse des cris de temps en temps
+IF
+Global("QQCRY","GLOBAL",0)
+PartyHasItem("QQPERR")
+THEN
+RESPONSE #100
+Wait(20)
+SetGlobal("QQCRY","GLOBAL",1)
+Wait(4)
+SetGlobal("QQKUOCONV","GLOBAL",0)
+SetGlobal("QQAKKHCONV","GLOBAL",0)
+Continue()
+END
+
+IF
+Global("QQCRY","GLOBAL",1)
+THEN
+RESPONSE #80
+PlaySound("QQPERR5")
+Wait(110)
+SetGlobal("QQCRY","GLOBAL",0)
+Continue()
+RESPONSE #80
+PlaySound("QQPERR2")
+Wait(80)
+SetGlobal("QQCRY","GLOBAL",0)
+Continue()
+END
+
+

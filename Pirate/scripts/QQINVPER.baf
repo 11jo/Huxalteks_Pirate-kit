@@ -1,0 +1,741 @@
+//Durée d'absence de Coco variable. Le repos ne fait pas revenir Coco.
+IF
+Global("QQGEMS","GLOBAL",0)
+!HasItem("QQPERR",Player1)    //Inutile en principe (toujours vrai) vu que l'objet fait apparaitre la créature scriptée et disparait (1charge)
+THEN
+RESPONSE #100
+RealSetGlobalTimer("QQDELAY","GLOBAL",18)
+DisplayStringHead(Myself,@333)
+SetGlobal("QQGEMS","GLOBAL",1)
+SetGlobal("QQPANOR","GLOBAL",1) //Renvoie à QQINVP2.baf
+RESPONSE #100
+RealSetGlobalTimer("QQDELAY","GLOBAL",22)
+DisplayStringHead(Myself,@333)
+SetGlobal("QQGEMS","GLOBAL",1)
+SetGlobal("QQPANOR","GLOBAL",1)
+RESPONSE #100
+RealSetGlobalTimer("QQDELAY","GLOBAL",27)
+DisplayStringHead(Myself,@333)
+SetGlobal("QQGEMS","GLOBAL",1)
+SetGlobal("QQPANOR","GLOBAL",1)
+RESPONSE #100
+RealSetGlobalTimer("QQDELAY","GLOBAL",36)
+DisplayStringHead(Myself,@333)
+SetGlobal("QQGEMS","GLOBAL",1)
+SetGlobal("QQPANOR","GLOBAL",1)
+RESPONSE #100
+RealSetGlobalTimer("QQDELAY","GLOBAL",45)
+DisplayStringHead(Myself,@333)
+SetGlobal("QQGEMS","GLOBAL",1)
+SetGlobal("QQPANOR","GLOBAL",1)
+RESPONSE #100
+RealSetGlobalTimer("QQDELAY","GLOBAL",54)
+DisplayStringHead(Myself,@333)
+SetGlobal("QQGEMS","GLOBAL",1)
+SetGlobal("QQPANOR","GLOBAL",1)
+RESPONSE #100
+RealSetGlobalTimer("QQDELAY","GLOBAL",72)
+DisplayStringHead(Myself,@333)
+SetGlobal("QQGEMS","GLOBAL",1)
+SetGlobal("QQPANOR","GLOBAL",1)
+RESPONSE #100
+RealSetGlobalTimer("QQDELAY","GLOBAL",90)
+DisplayStringHead(Myself,@333)
+SetGlobal("QQGEMS","GLOBAL",1)
+SetGlobal("QQPANOR","GLOBAL",1)
+RESPONSE #100
+RealSetGlobalTimer("QQDELAY","GLOBAL",108)
+DisplayStringHead(Myself,@333)
+SetGlobal("QQGEMS","GLOBAL",1)
+SetGlobal("QQPANOR","GLOBAL",1)
+RESPONSE #100
+RealSetGlobalTimer("QQDELAY","GLOBAL",126)
+DisplayStringHead(Myself,@333)
+SetGlobal("QQGEMS","GLOBAL",1)
+SetGlobal("QQPANOR","GLOBAL",1)
+RESPONSE #100
+RealSetGlobalTimer("QQDELAY","GLOBAL",144)
+DisplayStringHead(Myself,@333)
+SetGlobal("QQGEMS","GLOBAL",1)
+SetGlobal("QQPANOR","GLOBAL",1)
+RESPONSE #100
+RealSetGlobalTimer("QQDELAY","GLOBAL",162)
+DisplayStringHead(Myself,@333)
+SetGlobal("QQGEMS","GLOBAL",1)
+SetGlobal("QQPANOR","GLOBAL",1)
+RESPONSE #100
+RealSetGlobalTimer("QQDELAY","GLOBAL",198)
+DisplayStringHead(Myself,@333)
+SetGlobal("QQGEMS","GLOBAL",1)
+SetGlobal("QQPANOR","GLOBAL",1)
+RESPONSE #100
+RealSetGlobalTimer("QQDELAY","GLOBAL",234)
+DisplayStringHead(Myself,@333)
+SetGlobal("QQGEMS","GLOBAL",1)
+SetGlobal("QQPANOR","GLOBAL",1)
+RESPONSE #100
+RealSetGlobalTimer("QQDELAY","GLOBAL",270)
+DisplayStringHead(Myself,@333)
+SetGlobal("QQGEMS","GLOBAL",1)
+SetGlobal("QQPANOR","GLOBAL",1)
+END
+
+
+//Coco peut revenir les "mains" vides (plusieurs blocs identiques pour augmenter la probabilité)
+IF
+RealGlobalTimerExpired("QQDELAY","GLOBAL")
+Global("QQGEMS","GLOBAL",1)
+THEN
+RESPONSE #100
+PlaySound("QQPERR5")
+GiveItemCreate("QQPERR",Player1,1,0,0)
+DisplayStringHead(Player1,@222)
+SetGlobal("QQGEMS","GLOBAL",2) //Renvoie à QQINVP2.baf
+
+RESPONSE #100
+PlaySound("QQPERR5")
+GiveItemCreate("QQPERR",Player1,1,0,0)
+DisplayStringHead(Player1,@222)
+SetGlobal("QQGEMS","GLOBAL",2)
+
+RESPONSE #100
+PlaySound("QQPERR5")
+GiveItemCreate("QQPERR",Player1,1,0,0)
+DisplayStringHead(Player1,@222)
+SetGlobal("QQGEMS","GLOBAL",2)
+
+RESPONSE #100
+PlaySound("QQPERR5")
+GiveItemCreate("QQPERR",Player1,1,0,0)
+DisplayStringHead(Player1,@222)
+SetGlobal("QQGEMS","GLOBAL",2)
+
+RESPONSE #100
+PlaySound("QQPERR5")
+GiveItemCreate("QQPERR",Player1,1,0,0)
+DisplayStringHead(Player1,@222)
+SetGlobal("QQGEMS","GLOBAL",2)
+
+RESPONSE #100
+PlaySound("QQPERR5")
+GiveItemCreate("QQPERR",Player1,1,0,0)
+DisplayStringHead(Player1,@222)
+SetGlobal("QQGEMS","GLOBAL",2)
+
+RESPONSE #100
+PlaySound("QQPERR5")
+GiveItemCreate("QQPERR",Player1,1,0,0)
+DisplayStringHead(Player1,@222)
+SetGlobal("QQGEMS","GLOBAL",2)
+
+RESPONSE #100
+PlaySound("QQPERR5")
+GiveItemCreate("QQPERR",Player1,1,0,0)
+DisplayStringHead(Player1,@222)
+SetGlobal("QQGEMS","GLOBAL",2)
+
+RESPONSE #100
+PlaySound("QQPERR5")
+GiveItemCreate("QQPERR",Player1,1,0,0)
+DisplayStringHead(Player1,@222)
+SetGlobal("QQGEMS","GLOBAL",2)
+
+RESPONSE #100
+PlaySound("QQPERR5")
+GiveItemCreate("QQPERR",Player1,1,0,0)
+DisplayStringHead(Player1,@222)
+SetGlobal("QQGEMS","GLOBAL",2)
+
+RESPONSE #100
+PlaySound("QQPERR5")
+GiveItemCreate("QQPERR",Player1,1,0,0)
+DisplayStringHead(Player1,@222)
+SetGlobal("QQGEMS","GLOBAL",2)
+
+RESPONSE #100
+PlaySound("QQPERR5")
+GiveItemCreate("QQPERR",Player1,1,0,0)
+DisplayStringHead(Player1,@222)
+SetGlobal("QQGEMS","GLOBAL",2)
+
+RESPONSE #100
+PlaySound("QQPERR5")
+GiveItemCreate("QQPERR",Player1,1,0,0)
+DisplayStringHead(Player1,@222)
+SetGlobal("QQGEMS","GLOBAL",2)
+
+RESPONSE #100
+PlaySound("QQPERR5")
+GiveItemCreate("QQPERR",Player1,1,0,0)
+DisplayStringHead(Player1,@222)
+SetGlobal("QQGEMS","GLOBAL",2)
+
+RESPONSE #100
+PlaySound("QQPERR5")
+GiveItemCreate("QQPERR",Player1,1,0,0)
+DisplayStringHead(Player1,@222)
+SetGlobal("QQGEMS","GLOBAL",2)
+
+RESPONSE #100
+PlaySound("QQPERR5")
+GiveItemCreate("QQPERR",Player1,1,0,0)
+DisplayStringHead(Player1,@222)
+SetGlobal("QQGEMS","GLOBAL",2)
+
+RESPONSE #100
+PlaySound("QQPERR5")
+GiveItemCreate("QQPERR",Player1,1,0,0)
+DisplayStringHead(Player1,@222)
+SetGlobal("QQGEMS","GLOBAL",2)
+
+RESPONSE #100
+PlaySound("QQPERR5")
+GiveItemCreate("QQPERR",Player1,1,0,0)
+DisplayStringHead(Player1,@222)
+SetGlobal("QQGEMS","GLOBAL",2)
+
+RESPONSE #100
+PlaySound("QQPERR5")
+GiveItemCreate("QQPERR",Player1,1,0,0)
+DisplayStringHead(Player1,@222)
+SetGlobal("QQGEMS","GLOBAL",2)
+
+
+//Objets précieux pouvant être rapportés
+RESPONSE #100
+PlaySound("QQPARROT")
+GiveItemCreate("QQPERR",Player1,1,0,0)
+GiveItemCreate("QQFRUT",Player1,1,0,0)
+StartDialogNoSet(Player1)
+SetGlobal("QQGEMS","GLOBAL",2)
+
+RESPONSE #100
+PlaySound("QQPARROT")
+GiveItemCreate("QQPERR",Player1,1,0,0)
+GiveItemCreate("QQMINE",Player1,1,0,0)
+StartDialogNoSet(Player1)
+SetGlobal("QQGEMS","GLOBAL",2)
+
+RESPONSE #100
+PlaySound("QQPARROT")
+GiveItemCreate("QQPERR",Player1,1,0,0)
+GiveItemCreate("QQCLER",Player1,1,0,0)
+StartDialogNoSet(Player1)
+SetGlobal("QQGEMS","GLOBAL",2)
+
+RESPONSE #100
+PlaySound("QQPARROT")
+GiveItemCreate("QQPERR",Player1,1,0,0)
+GiveItemCreate("QQHALR",Player1,1,0,0)
+StartDialogNoSet(Player1)
+SetGlobal("QQGEMS","GLOBAL",2)
+
+RESPONSE #100
+PlaySound("QQPARROT")
+GiveItemCreate("QQPERR",Player1,1,0,0)
+GiveItemCreate("QQTRI",Player1,1,0,0)
+StartDialogNoSet(Player1)
+SetGlobal("QQGEMS","GLOBAL",2)
+
+RESPONSE #100
+PlaySound("QQPARROT")
+GiveItemCreate("QQPERR",Player1,1,0,0)
+GiveItemCreate("QQMASK",Player1,1,0,0)
+StartDialogNoSet(Player1)
+SetGlobal("QQGEMS","GLOBAL",2)
+
+RESPONSE #100
+PlaySound("QQPARROT")
+GiveItemCreate("QQPERR",Player1,1,0,0)
+GiveItemCreate("MISC16",Player1,1,0,0)
+StartDialogNoSet(Player1)
+SetGlobal("QQGEMS","GLOBAL",2)
+
+RESPONSE #100
+PlaySound("QQPARROT")
+GiveItemCreate("QQPERR",Player1,1,0,0)
+GiveItemCreate("MISC17",Player1,1,0,0)
+StartDialogNoSet(Player1)
+SetGlobal("QQGEMS","GLOBAL",2)
+
+RESPONSE #100
+PlaySound("QQPARROT")
+GiveItemCreate("QQPERR",Player1,1,0,0)
+GiveItemCreate("MISC18",Player1,1,0,0)
+StartDialogNoSet(Player1)
+SetGlobal("QQGEMS","GLOBAL",2)
+
+RESPONSE #100
+PlaySound("QQPARROT")
+GiveItemCreate("QQPERR",Player1,1,0,0)
+GiveItemCreate("GBERRY",Player1,2,0,0)
+StartDialogNoSet(Player1)
+SetGlobal("QQGEMS","GLOBAL",2)
+
+RESPONSE #100
+PlaySound("QQPARROT")
+GiveItemCreate("QQPERR",Player1,1,0,0)
+GiveItemCreate("DAGG02",Player1,1,0,0)
+StartDialogNoSet(Player1)
+SetGlobal("QQGEMS","GLOBAL",2)
+
+RESPONSE #100
+PlaySound("QQPARROT")
+GiveItemCreate("QQPERR",Player1,1,0,0)
+GiveItemCreate("MISC19",Player1,1,0,0)
+StartDialogNoSet(Player1)
+SetGlobal("QQGEMS","GLOBAL",2)
+
+RESPONSE #100
+PlaySound("QQPARROT")
+GiveItemCreate("QQPERR",Player1,1,0,0)
+GiveItemCreate("MISC20",Player1,1,0,0)
+StartDialogNoSet(Player1)
+SetGlobal("QQGEMS","GLOBAL",2)
+
+RESPONSE #100
+PlaySound("QQPARROT")
+GiveItemCreate("QQPERR",Player1,1,0,0)
+GiveItemCreate("MISC21",Player1,1,0,0)
+StartDialogNoSet(Player1)
+SetGlobal("QQGEMS","GLOBAL",2)
+
+RESPONSE #100
+PlaySound("QQPARROT")
+GiveItemCreate("QQPERR",Player1,1,0,0)
+GiveItemCreate("HELM19",Player1,1,0,0)
+StartDialogNoSet(Player1)
+SetGlobal("QQGEMS","GLOBAL",2)
+
+RESPONSE #100
+PlaySound("QQPARROT")
+GiveItemCreate("QQPERR",Player1,1,0,0)
+GiveItemCreate("MISC22",Player1,1,0,0)
+StartDialogNoSet(Player1)
+SetGlobal("QQGEMS","GLOBAL",2)
+
+RESPONSE #100
+PlaySound("QQPARROT")
+GiveItemCreate("QQPERR",Player1,1,0,0)
+GiveItemCreate("MISC23",Player1,1,0,0)
+StartDialogNoSet(Player1)
+SetGlobal("QQGEMS","GLOBAL",2)
+
+RESPONSE #100
+PlaySound("QQPARROT")
+GiveItemCreate("QQPERR",Player1,1,0,0)
+GiveItemCreate("MISC24",Player1,1,0,0)
+StartDialogNoSet(Player1)
+SetGlobal("QQGEMS","GLOBAL",2)
+
+RESPONSE #100
+PlaySound("QQPARROT")
+GiveItemCreate("QQPERR",Player1,1,0,0)
+GiveItemCreate("QQMIS6I",Player1,1,0,0)
+StartDialogNoSet(Player1)
+SetGlobal("QQGEMS","GLOBAL",2)
+
+RESPONSE #100
+PlaySound("QQPARROT")
+GiveItemCreate("QQPERR",Player1,1,0,0)
+GiveItemCreate("MISC25",Player1,1,0,0)
+StartDialogNoSet(Player1)
+SetGlobal("QQGEMS","GLOBAL",2)
+
+RESPONSE #100
+PlaySound("QQPARROT")
+GiveItemCreate("QQPERR",Player1,1,0,0)
+GiveItemCreate("MISC26",Player1,1,0,0)
+StartDialogNoSet(Player1)
+SetGlobal("QQGEMS","GLOBAL",2)
+
+RESPONSE #100
+PlaySound("QQPARROT")
+GiveItemCreate("QQPERR",Player1,1,0,0)
+GiveItemCreate("MISC9M",Player1,1,0,0)
+StartDialogNoSet(Player1)
+SetGlobal("QQGEMS","GLOBAL",2)
+
+RESPONSE #100
+PlaySound("QQPARROT")
+GiveItemCreate("QQPERR",Player1,1,0,0)
+GiveItemCreate("HELM23",Player1,1,0,0)
+StartDialogNoSet(Player1)
+SetGlobal("QQGEMS","GLOBAL",2)
+
+RESPONSE #100
+PlaySound("QQPARROT")
+GiveItemCreate("QQPERR",Player1,1,0,0)
+GiveItemCreate("MISC27",Player1,1,0,0)
+StartDialogNoSet(Player1)
+SetGlobal("QQGEMS","GLOBAL",2)
+
+RESPONSE #100
+PlaySound("QQPARROT")
+GiveItemCreate("QQPERR",Player1,1,0,0)
+GiveItemCreate("MISC28",Player1,1,0,0)
+StartDialogNoSet(Player1)
+SetGlobal("QQGEMS","GLOBAL",2)
+
+RESPONSE #100
+PlaySound("QQPARROT")
+GiveItemCreate("QQPERR",Player1,1,0,0)
+GiveItemCreate("MISC29",Player1,1,0,0)
+StartDialogNoSet(Player1)
+SetGlobal("QQGEMS","GLOBAL",2)
+
+RESPONSE #100
+PlaySound("QQPARROT")
+GiveItemCreate("QQPERR",Player1,1,0,0)
+GiveItemCreate("MISC30",Player1,1,0,0)
+StartDialogNoSet(Player1)
+SetGlobal("QQGEMS","GLOBAL",2)
+
+RESPONSE #100
+PlaySound("QQPARROT")
+GiveItemCreate("QQPERR",Player1,1,0,0)
+GiveItemCreate("MISC31",Player1,1,0,0)
+StartDialogNoSet(Player1)
+SetGlobal("QQGEMS","GLOBAL",2)
+
+RESPONSE #100
+PlaySound("QQPARROT")
+GiveItemCreate("QQPERR",Player1,1,0,0)
+GiveItemCreate("HELM29",Player1,1,0,0)
+StartDialogNoSet(Player1)
+SetGlobal("QQGEMS","GLOBAL",2)
+
+RESPONSE #100
+PlaySound("QQPARROT")
+GiveItemCreate("QQPERR",Player1,1,0,0)
+GiveItemCreate("MISCAC",Player1,1,0,0)
+StartDialogNoSet(Player1)
+SetGlobal("QQGEMS","GLOBAL",2)
+
+RESPONSE #100
+PlaySound("QQPARROT")
+GiveItemCreate("QQPERR",Player1,1,0,0)
+GiveItemCreate("MISC32",Player1,1,0,0)
+StartDialogNoSet(Player1)
+SetGlobal("QQGEMS","GLOBAL",2)
+
+RESPONSE #100
+PlaySound("QQPARROT")
+GiveItemCreate("QQPERR",Player1,1,0,0)
+GiveItemCreate("MISC33",Player1,1,0,0)
+StartDialogNoSet(Player1)
+SetGlobal("QQGEMS","GLOBAL",2)
+
+RESPONSE #100
+PlaySound("QQPARROT")
+GiveItemCreate("QQPERR",Player1,1,0,0)
+GiveItemCreate("MISC34",Player1,1,0,0)
+StartDialogNoSet(Player1)
+SetGlobal("QQGEMS","GLOBAL",2)
+
+RESPONSE #100
+PlaySound("QQPARROT")
+GiveItemCreate("QQPERR",Player1,1,0,0)
+GiveItemCreate("MISC35",Player1,1,0,0)
+StartDialogNoSet(Player1)
+SetGlobal("QQGEMS","GLOBAL",2)
+
+RESPONSE #100
+PlaySound("QQPARROT")
+GiveItemCreate("QQPERR",Player1,1,0,0)
+GiveItemCreate("MISC36",Player1,1,0,0)
+StartDialogNoSet(Player1)
+SetGlobal("QQGEMS","GLOBAL",2)
+
+RESPONSE #100
+PlaySound("QQPARROT")
+GiveItemCreate("QQPERR",Player1,1,0,0)
+GiveItemCreate("MISC37",Player1,1,0,0)
+StartDialogNoSet(Player1)
+SetGlobal("QQGEMS","GLOBAL",2)
+
+RESPONSE #100
+PlaySound("QQPARROT")
+GiveItemCreate("QQPERR",Player1,1,0,0)
+GiveItemCreate("MISC38",Player1,1,0,0)
+StartDialogNoSet(Player1)
+SetGlobal("QQGEMS","GLOBAL",2)
+
+RESPONSE #100
+PlaySound("QQPARROT")
+GiveItemCreate("QQPERR",Player1,1,0,0)
+GiveItemCreate("MISC5K",Player1,1,0,0)
+StartDialogNoSet(Player1)
+SetGlobal("QQGEMS","GLOBAL",2)
+
+RESPONSE #100
+PlaySound("QQPARROT")
+GiveItemCreate("QQPERR",Player1,1,0,0)
+GiveItemCreate("MISC39",Player1,1,0,0)
+StartDialogNoSet(Player1)
+SetGlobal("QQGEMS","GLOBAL",2)
+
+RESPONSE #100
+PlaySound("QQPARROT")
+GiveItemCreate("QQPERR",Player1,1,0,0)
+GiveItemCreate("MISC40",Player1,1,0,0)
+StartDialogNoSet(Player1)
+SetGlobal("QQGEMS","GLOBAL",2)
+
+RESPONSE #100
+PlaySound("QQPARROT")
+GiveItemCreate("QQPERR",Player1,1,0,0)
+GiveItemCreate("MISC41",Player1,1,0,0)
+StartDialogNoSet(Player1)
+SetGlobal("QQGEMS","GLOBAL",2)
+
+RESPONSE #100
+PlaySound("QQPARROT")
+GiveItemCreate("QQPERR",Player1,1,0,0)
+GiveItemCreate("MISC42",Player1,1,0,0)
+StartDialogNoSet(Player1)
+SetGlobal("QQGEMS","GLOBAL",2)
+
+RESPONSE #100
+PlaySound("QQPARROT")
+GiveItemCreate("QQPERR",Player1,1,0,0)
+GiveItemCreate("MISC43",Player1,1,0,0)
+StartDialogNoSet(Player1)
+SetGlobal("QQGEMS","GLOBAL",2)
+
+RESPONSE #100
+PlaySound("QQPARROT")
+GiveItemCreate("QQPERR",Player1,1,0,0)
+GiveItemCreate("MISC44",Player1,1,0,0)
+StartDialogNoSet(Player1)
+SetGlobal("QQGEMS","GLOBAL",2)
+
+RESPONSE #100
+PlaySound("QQPARROT")
+GiveItemCreate("QQPERR",Player1,1,0,0)
+GiveItemCreate("MISC45",Player1,1,0,0)
+StartDialogNoSet(Player1)
+SetGlobal("QQGEMS","GLOBAL",2)
+
+RESPONSE #100
+PlaySound("QQPARROT")
+GiveItemCreate("QQPERR",Player1,1,0,0)
+GiveItemCreate("MISC6Z",Player1,1,0,0)
+StartDialogNoSet(Player1)
+SetGlobal("QQGEMS","GLOBAL",2)
+
+RESPONSE #100
+PlaySound("QQPARROT")
+GiveItemCreate("QQPERR",Player1,1,0,0)
+GiveItemCreate("MISC07",Player1,1,0,0)
+StartDialogNoSet(Player1)
+SetGlobal("QQGEMS","GLOBAL",2)
+
+RESPONSE #100
+PlaySound("QQPARROT")
+GiveItemCreate("QQPERR",Player1,1,0,0)
+GiveItemCreate("MISC5G",Player1,1,0,0)
+StartDialogNoSet(Player1)
+SetGlobal("QQGEMS","GLOBAL",2)
+
+RESPONSE #100
+PlaySound("QQPARROT")
+GiveItemCreate("QQPERR",Player1,1,0,0)
+GiveItemCreate("MISC61",Player1,1,0,0)
+StartDialogNoSet(Player1)
+SetGlobal("QQGEMS","GLOBAL",2)
+
+RESPONSE #100
+PlaySound("QQPARROT")
+GiveItemCreate("QQPERR",Player1,1,0,0)
+GiveItemCreate("MISCAA",Player1,1,0,0)
+StartDialogNoSet(Player1)
+SetGlobal("QQGEMS","GLOBAL",2)
+
+RESPONSE #100
+PlaySound("QQPARROT")
+GiveItemCreate("QQPERR",Player1,1,0,0)
+GiveItemCreate("MISCAG",Player1,1,0,0)
+StartDialogNoSet(Player1)
+SetGlobal("QQGEMS","GLOBAL",2)
+
+RESPONSE #100
+PlaySound("QQPARROT")
+GiveItemCreate("QQPERR",Player1,1,0,0)
+GiveItemCreate("MISCAH",Player1,1,0,0)
+StartDialogNoSet(Player1)
+SetGlobal("QQGEMS","GLOBAL",2)
+
+RESPONSE #100
+PlaySound("QQPARROT")
+GiveItemCreate("QQPERR",Player1,1,0,0)
+GiveItemCreate("AMUL02",Player1,1,0,0)
+StartDialogNoSet(Player1)
+SetGlobal("QQGEMS","GLOBAL",2)
+
+RESPONSE #100
+PlaySound("QQPARROT")
+GiveItemCreate("QQPERR",Player1,1,0,0)
+GiveItemCreate("AMUL03",Player1,1,0,0)
+StartDialogNoSet(Player1)
+SetGlobal("QQGEMS","GLOBAL",2)
+
+RESPONSE #100
+PlaySound("QQPARROT")
+GiveItemCreate("QQPERR",Player1,1,0,0)
+GiveItemCreate("AMUL04",Player1,1,0,0)
+StartDialogNoSet(Player1)
+SetGlobal("QQGEMS","GLOBAL",2)
+
+RESPONSE #100
+PlaySound("QQPARROT")
+GiveItemCreate("QQPERR",Player1,1,0,0)
+GiveItemCreate("AMUL05",Player1,1,0,0)
+StartDialogNoSet(Player1)
+SetGlobal("QQGEMS","GLOBAL",2)
+
+RESPONSE #100
+PlaySound("QQPARROT")
+GiveItemCreate("QQPERR",Player1,1,0,0)
+GiveItemCreate("AMUL06",Player1,1,0,0)
+StartDialogNoSet(Player1)
+SetGlobal("QQGEMS","GLOBAL",2)
+
+RESPONSE #100
+PlaySound("QQPARROT")
+GiveItemCreate("QQPERR",Player1,1,0,0)
+GiveItemCreate("AMUL07",Player1,1,0,0)
+StartDialogNoSet(Player1)
+SetGlobal("QQGEMS","GLOBAL",2)
+
+RESPONSE #100
+PlaySound("QQPARROT")
+GiveItemCreate("QQPERR",Player1,1,0,0)
+GiveItemCreate("AMUL08",Player1,1,0,0)
+StartDialogNoSet(Player1)
+SetGlobal("QQGEMS","GLOBAL",2)
+
+RESPONSE #100
+PlaySound("QQPARROT")
+GiveItemCreate("QQPERR",Player1,1,0,0)
+GiveItemCreate("AMUL09",Player1,1,0,0)
+StartDialogNoSet(Player1)
+SetGlobal("QQGEMS","GLOBAL",2)
+
+RESPONSE #100
+PlaySound("QQPARROT")
+GiveItemCreate("QQPERR",Player1,1,0,0)
+GiveItemCreate("AMUL10",Player1,1,0,0)
+StartDialogNoSet(Player1)
+SetGlobal("QQGEMS","GLOBAL",2)
+
+RESPONSE #100
+PlaySound("QQPARROT")
+GiveItemCreate("QQPERR",Player1,1,0,0)
+GiveItemCreate("AMUL11",Player1,1,0,0)
+StartDialogNoSet(Player1)
+SetGlobal("QQGEMS","GLOBAL",2)
+
+RESPONSE #100
+PlaySound("QQPARROT")
+GiveItemCreate("QQPERR",Player1,1,0,0)
+GiveItemCreate("AMUL12",Player1,1,0,0)
+StartDialogNoSet(Player1)
+SetGlobal("QQGEMS","GLOBAL",2)
+
+RESPONSE #100
+PlaySound("QQPARROT")
+GiveItemCreate("QQPERR",Player1,1,0,0)
+GiveItemCreate("AMUL13",Player1,1,0,0)
+StartDialogNoSet(Player1)
+SetGlobal("QQGEMS","GLOBAL",2)
+
+RESPONSE #100 
+PlaySound("QQPARROT")
+GiveItemCreate("QQPERR",Player1,1,0,0)
+GiveItemCreate("RING10",Player1,1,0,0)
+StartDialogNoSet(Player1)
+SetGlobal("QQGEMS","GLOBAL",2)
+
+RESPONSE #100
+PlaySound("QQPARROT")
+GiveItemCreate("QQPERR",Player1,1,0,0)
+GiveItemCreate("RING11",Player1,1,0,0)
+StartDialogNoSet(Player1)
+SetGlobal("QQGEMS","GLOBAL",2)
+
+RESPONSE #100
+PlaySound("QQPARROT")
+GiveItemCreate("QQPERR",Player1,1,0,0)
+GiveItemCreate("RING12",Player1,1,0,0)
+StartDialogNoSet(Player1)
+SetGlobal("QQGEMS","GLOBAL",2)
+
+RESPONSE #100
+PlaySound("QQPARROT")
+GiveItemCreate("QQPERR",Player1,1,0,0)
+GiveItemCreate("RING13",Player1,1,0,0)
+StartDialogNoSet(Player1)
+SetGlobal("QQGEMS","GLOBAL",2)
+
+RESPONSE #100
+PlaySound("QQPARROT")
+GiveItemCreate("QQPERR",Player1,1,0,0)
+GiveItemCreate("RING14",Player1,1,0,0)
+StartDialogNoSet(Player1)
+SetGlobal("QQGEMS","GLOBAL",2)
+
+RESPONSE #100
+PlaySound("QQPARROT")
+GiveItemCreate("QQPERR",Player1,1,0,0)
+GiveItemCreate("RING15",Player1,1,0,0)
+StartDialogNoSet(Player1)
+SetGlobal("QQGEMS","GLOBAL",2)
+
+RESPONSE #100
+PlaySound("QQPARROT")
+GiveItemCreate("QQPERR",Player1,1,0,0)
+GiveItemCreate("RING16",Player1,1,0,0)
+StartDialogNoSet(Player1)
+SetGlobal("QQGEMS","GLOBAL",2)
+
+RESPONSE #100
+PlaySound("QQPARROT")
+GiveItemCreate("QQPERR",Player1,1,0,0)
+GiveItemCreate("RING17",Player1,1,0,0)
+StartDialogNoSet(Player1)
+SetGlobal("QQGEMS","GLOBAL",2)
+
+RESPONSE #100
+PlaySound("QQPARROT")
+GiveItemCreate("QQPERR",Player1,1,0,0)
+GiveItemCreate("RING18",Player1,1,0,0)
+StartDialogNoSet(Player1)
+SetGlobal("QQGEMS","GLOBAL",2)
+
+RESPONSE #100
+PlaySound("QQPARROT")
+GiveItemCreate("QQPERR",Player1,1,0,0)
+GiveItemCreate("RING19",Player1,1,0,0)
+StartDialogNoSet(Player1)
+SetGlobal("QQGEMS","GLOBAL",2)
+
+RESPONSE #100
+PlaySound("QQPARROT")
+GiveItemCreate("QQPERR",Player1,1,0,0)
+GiveItemCreate("RING23",Player1,1,0,0)
+StartDialogNoSet(Player1)
+SetGlobal("QQGEMS","GLOBAL",2)
+END
+
+
+//Destruction de la créature
+IF
+Global("QQGEMS","GLOBAL",2)
+THEN
+RESPONSE #100
+Wait(1)
+SetGlobal("QQGEMS","GLOBAL",0)
+DestroySelf()
+END
+

@@ -1,0 +1,39 @@
+//Ajouter Coco au début de BGT
+IF
+Global("QQverifCocoBGT","GLOBAL",0)
+Kit(Player1,QQCORSR)
+!PartyHasItem("QQPERR")
+THEN
+RESPONSE #100
+SetGlobal("QQverifCocoBGT","GLOBAL",1)
+Continue()
+END
+
+IF
+Global("QQverifCocoBGT","GLOBAL",1)
+THEN
+RESPONSE #100
+ActionOverride(Player1,CreateItem("QQPERR",1,0,0))
+SetGlobal("QQverifCocoBGT","GLOBAL",2)
+Continue()
+END
+
+//Ajouter le coffre au début de BGT
+IF
+Global("QQverifCofBGT","GLOBAL",0)
+Kit(Player1,QQCORSR)
+!PartyHasItem("QQCOF")
+THEN
+RESPONSE #100
+SetGlobal("QQverifCofBGT","GLOBAL",1)
+Continue()
+END
+
+IF
+Global("QQverifCofBGT","GLOBAL",1)
+THEN
+RESPONSE #100
+ActionOverride(Player1,CreateItem("QQCOF",1,0,0))
+SetGlobal("QQverifCofBGT","GLOBAL",2)
+Continue()
+END

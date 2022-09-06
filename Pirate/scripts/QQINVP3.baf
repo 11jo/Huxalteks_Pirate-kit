@@ -1,0 +1,94 @@
+//Différentes convocations d'alliés pirates en fonction du niveau
+IF
+LevelLT(Player1,13)
+THEN
+RESPONSE #100
+DisplayString(Player1,@3334)
+DestroySelf()
+END
+
+IF
+LevelGT(Player1,12)
+LevelLT(Player1,15)
+THEN
+RESPONSE #100
+CreateCreatureObjectDoor("QQPIRAT",Player1,0,0,0)
+SetGlobal("QQPIRATEHERE","GLOBAL",1)
+SetGlobalTimer("QQDELAYPIR","GLOBAL",70)
+DestroySelf()
+END
+
+IF
+LevelGT(Player1,14)
+LevelLT(Player1,17)
+THEN
+RESPONSE #100
+CreateCreatureObjectDoor("QQPIRA2",Player1,0,0,0)
+SetGlobal("QQPIRATEHERE","GLOBAL",1)
+SetGlobalTimer("QQDELAYPIR","GLOBAL",70)
+DestroySelf()
+END
+
+IF
+LevelGT(Player1,16)
+LevelLT(Player1,19)
+THEN
+RESPONSE #100
+CreateCreatureObjectDoor("QQPIRAT",Player1,0,0,0)
+CreateCreatureObjectDoor("QQPIRA2",Player1,0,0,0)
+SetGlobal("QQPIRATEHERE","GLOBAL",1)
+SetGlobalTimer("QQDELAYPIR","GLOBAL",70)
+DestroySelf()
+END
+
+IF
+LevelGT(Player1,18)
+LevelLT(Player1,21)
+THEN
+RESPONSE #100
+CreateCreatureObjectDoor("QQPIRA2",Player1,0,0,0)
+CreateCreatureObjectDoor("QQPIRA2",Player1,0,0,0)
+SetGlobal("QQPIRATEHERE","GLOBAL",1)
+SetGlobalTimer("QQDELAYPIR","GLOBAL",70)
+DestroySelf()
+END
+
+IF
+LevelGT(Player1,20)
+LevelLT(Player1,23)
+THEN
+RESPONSE #100
+CreateCreatureObjectDoor("QQPIRAT",Player1,0,0,0)
+CreateCreatureObjectDoor("QQPIRA2",Player1,0,0,0)
+CreateCreatureObjectDoor("QQPIRA2",Player1,0,0,0)
+SetGlobal("QQPIRATEHERE","GLOBAL",1)
+SetGlobalTimer("QQDELAYPIR","GLOBAL",70)
+DestroySelf()
+END
+
+IF
+LevelGT(Player1,22)
+LevelLT(Player1,25)
+THEN
+RESPONSE #100
+CreateCreatureObjectDoor("QQPIRA2",Player1,0,0,0)
+CreateCreatureObjectDoor("QQPIRA2",Player1,0,0,0)
+CreateCreatureObjectDoor("QQPIRA2",Player1,0,0,0)
+SetGlobal("QQPIRATEHERE","GLOBAL",1)
+SetGlobalTimer("QQDELAYPIR","GLOBAL",70)
+DestroySelf()
+END
+
+IF
+LevelGT(Player1,24)
+THEN
+RESPONSE #100
+CreateCreatureObjectDoor("QQPIRAT",Player1,0,0,0)
+CreateCreatureObjectDoor("QQPIRA2",Player1,0,0,0)
+CreateCreatureObjectDoor("QQPIRA2",Player1,0,0,0)
+CreateCreatureObjectDoor("QQAKKH",Player1,0,0,0)
+SetGlobal("QQPIRATEHERE","GLOBAL",1)
+SetGlobalTimer("QQDELAYPIR","GLOBAL",70)
+DestroySelf()
+END
+

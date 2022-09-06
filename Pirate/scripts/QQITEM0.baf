@@ -1,0 +1,49 @@
+//Ajouter Coco au début de SoA, sans CtB
+IF
+Global("TakeImportItems","AR0602",1)
+Kit(Player1,QQCORSR)
+Global("CorsairVerifPlayer1","AR0602",0)
+!PartyHasItem("QQPERR")
+THEN
+RESPONSE #100
+ActionOverride(Player1,CreateItem("QQPERR",1,0,0))
+SetGlobal("CorsairVerifPlayer1","AR0602",1)
+END
+
+//Ajouter le coffre au début de SoA, sans CtB
+IF
+Global("TakeImportItems","AR0602",1)
+Kit(Player1,QQCORSR)
+Global("CorsairVerif2Player1","AR0602",0)
+!PartyHasItem("QQCOF")
+THEN
+RESPONSE #100
+ActionOverride(Player1,CreateItem("QQCOF",1,0,0))
+SetGlobal("CorsairVerif2Player1","AR0602",1)
+END
+
+//Ajouter Coco au début de SoA, après les Chores de CtB
+IF
+Global("TakeImportItems","AR0602",1)
+Kit(Player1,QQCORSR)
+Global("CorsairVerif3Player1","AR0602",0)
+Global("KD_ChoresDone","GLOBAL",1)
+!PartyHasItem("QQPERR")
+THEN
+RESPONSE #100
+ActionOverride(Player1,CreateItem("QQPERR",1,0,0))
+SetGlobal("CorsairVerif3Player1","AR0602",1)
+END
+
+//Ajouter le coffre au début de SoA, après les Chores de CtB
+IF
+Global("TakeImportItems","AR0602",1)
+Kit(Player1,QQCORSR)
+Global("CorsairVerif4Player1","AR0602",0)
+Global("KD_ChoresDone","GLOBAL",1)
+!PartyHasItem("QQCOF")
+THEN
+RESPONSE #100
+ActionOverride(Player1,CreateItem("QQCOF",1,0,0))
+SetGlobal("CorsairVerif4Player1","AR0602",1)
+END

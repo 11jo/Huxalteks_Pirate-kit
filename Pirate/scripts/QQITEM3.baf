@@ -1,0 +1,11 @@
+//Si l'anneau pirate est dans l'inventaire d'un autre joueur que player1, lui rendre !
+
+
+// Partie 1 : EXTEND TOP dans baldur.bcs, la partie 2 est QQITEM3b EXTEND TOP DPLAYER3.bcs
+IF
+!HasItem("QQPIR",Player2)
+THEN
+RESPONSE #100
+GiveItemCreate("QQPIR",Player1,0,0,0)
+Continue()
+END

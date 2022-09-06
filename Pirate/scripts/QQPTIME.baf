@@ -1,0 +1,64 @@
+IF
+GlobalTimerExpired("QQDELAYPIR","GLOBAL")
+THEN
+RESPONSE #100
+SetGlobal("QQPIRATEHERE","GLOBAL",0)
+Continue()
+END
+
+//fait baisser la réputation du groupe à chaque montée de niveau
+
+IF
+Level(Player1,9)
+Global("ReputationlevelUp","GLOBAL",1)
+THEN
+     RESPONSE #100
+           ReputationInc(-1)
+           SetGlobal("ReputationlevelUp","GLOBAL",2)
+           Continue()
+END
+
+
+IF
+Level(Player1,12)
+Global("ReputationlevelUp","GLOBAL",4)
+THEN
+     RESPONSE #100
+           ReputationInc(-1)
+           SetGlobal("ReputationlevelUp","GLOBAL",5)
+           Continue()
+END
+
+
+IF
+Level(Player1,15)
+Global("ReputationlevelUp","GLOBAL",7)
+THEN
+     RESPONSE #100
+           ReputationInc(-1)
+           SetGlobal("ReputationlevelUp","GLOBAL",8)
+           Continue()
+END
+
+
+IF
+Level(Player1,18)
+Global("ReputationlevelUp","GLOBAL",10)
+THEN
+     RESPONSE #100
+           ReputationInc(-1)
+           SetGlobal("ReputationlevelUp","GLOBAL",11)
+           Continue()
+END
+
+
+IF
+Level(Player1,21)
+Global("ReputationlevelUp","GLOBAL",13)
+THEN
+     RESPONSE #100
+           ReputationInc(-1)
+           SetGlobal("ReputationlevelUp","GLOBAL",14)
+           Continue()
+END
+

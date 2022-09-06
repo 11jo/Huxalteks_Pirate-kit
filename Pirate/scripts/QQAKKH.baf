@@ -1,0 +1,19 @@
+IF
+Global("QQAKKHCONV","GLOBAL",0)
+THEN
+RESPONSE #100
+DisplayStringHead(Myself,@6000)
+SetGlobal("QQAKKHCONV","GLOBAL",1)
+Continue()
+END
+
+//Disparition
+IF
+Global("QQPIRATEHERE","GLOBAL",0)
+GlobalTimerExpired("QQDELAYPIR","GLOBAL")
+THEN
+RESPONSE #100
+CreateVisualEffectObject("SPDIMNDR",Myself)
+DestroySelf()
+END
+

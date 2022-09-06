@@ -1,0 +1,35 @@
+//Si le player1 est de niveau 15 au moins, Coco explore la zone dans laquelle il se trouve
+IF
+LevelGT(Player1,13)
+Global("QQPANOR","GLOBAL",1)
+AreaType(OUTDOOR)
+THEN
+RESPONSE #100
+Wait(3)
+DisplayStringHead(Myself,@334)
+Explore()
+SetGlobal("QQPANOR","GLOBAL",0)
+Continue()
+END
+
+IF
+LevelLT(Player1,14)
+Global("QQPANOR","GLOBAL",1)
+THEN
+RESPONSE #100
+SetGlobal("QQPANOR","GLOBAL",0)
+Continue()
+END
+
+IF
+Global("QQGEMS","GLOBAL",2)
+THEN
+RESPONSE #100
+Wait(1)
+ActionOverride("QQINVPER",DestroySelf())
+Wait(1)
+SetGlobal("QQGEMS","GLOBAL",0)
+DestroySelf()
+END
+
+

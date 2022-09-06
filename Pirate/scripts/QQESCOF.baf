@@ -1,0 +1,19 @@
+IF
+See(Player1)
+Global("QQDialogue1","GLOBAL",0)
+THEN 
+RESPONSE #100
+SetGlobal("QQDialogue1","GLOBAL",1)
+StartDialogNoSet(Player1)
+Continue()
+END
+
+IF
+Global("QQDestroy","GLOBAL",1)
+THEN 
+RESPONSE #100
+Wait(2)
+Setglobal("QQDestroy","GLOBAL",2)
+DestroySelf()
+SetGlobal("QQDialogue1","GLOBAL",0)
+END

@@ -1,0 +1,414 @@
+BACKUP ~PIRATE/backup~
+AUTHOR ~Huxaltec - hydroxx9@hotmail.com~
+
+VERSION ~v2~
+
+README ~Pirate/help/[%LANGUAGE%]PIRATEReadme.html~
+
+ALWAYS
+ACTION_IF GAME_IS ~BGEE BG2EE IWDEE EET~ THEN BEGIN
+	INCLUDE ~Pirate/scripts/fl#add_kit_ee.tpa~
+	ACTION_DEFINE_ARRAY px_reload BEGIN
+	~setup.tra~
+	END
+	ACTION_DEFINE_ARRAY px_noconvert BEGIN END
+	LAF HANDLE_CHARSETS
+		INT_VAR
+		infer_charset = 1
+		STR_VAR
+		tra_path = EVAL ~%MOD_FOLDER%/traductions~
+		noconvert_array = px_noconvert
+		reload_array = px_reload
+	END
+END
+END
+
+AUTO_TRA ~Pirate/traductions/%s~
+
+LANGUAGE ~francais~
+	 ~french~
+	 ~Pirate/traductions/French/Setup.tra~
+
+BEGIN ~Pirate Kit v1.1~
+
+// The following fixes the broken kit.ids so that it can be used to detect kits properly.I stole this improved version from the Ding0.
+
+COPY_EXISTING ~kit.ids~ ~override~
+	REPLACE_TEXTUALLY ~.*[ %TAB%]TRUECLASS[ %TAB%]*~              ~0x4000 TRUECLASS~
+	REPLACE_TEXTUALLY ~.*[ %TAB%]BERSERKER[ %TAB%]*~              ~0x4001 BERSERKER~
+	REPLACE_TEXTUALLY ~.*[ %TAB%]WIZARDSLAYER[ %TAB%]*~           ~0x4002 WIZARDSLAYER~
+	REPLACE_TEXTUALLY ~.*[ %TAB%]KENSAI[ %TAB%]*~                 ~0x4003 KENSAI~
+	REPLACE_TEXTUALLY ~.*[ %TAB%]CAVALIER[ %TAB%]*~               ~0x4004 CAVALIER~
+	REPLACE_TEXTUALLY ~.*[ %TAB%]INQUISITOR[ %TAB%]*~             ~0x4005 INQUISITOR~
+	REPLACE_TEXTUALLY ~.*[ %TAB%]UNDEADHUNTER[ %TAB%]*~           ~0x4006 UNDEADHUNTER~
+	REPLACE_TEXTUALLY ~.*[ %TAB%]MAGESCHOOL_ABJURER[ %TAB%]*~     ~0x0040 MAGESCHOOL_ABJURER~
+	REPLACE_TEXTUALLY ~.*[ %TAB%]MAGESCHOOL_CONJURER[ %TAB%]*~    ~0x0080 MAGESCHOOL_CONJURER~
+	REPLACE_TEXTUALLY ~.*[ %TAB%]MAGESCHOOL_DIVINER[ %TAB%]*~     ~0x0100 MAGESCHOOL_DIVINER~
+	REPLACE_TEXTUALLY ~.*[ %TAB%]MAGESCHOOL_ENCHANTER[ %TAB%]*~   ~0x0200 MAGESCHOOL_ENCHANTER~
+	REPLACE_TEXTUALLY ~.*[ %TAB%]MAGESCHOOL_ILLUSIONIST[ %TAB%]*~ ~0x0400 MAGESCHOOL_ILLUSIONIST~
+	REPLACE_TEXTUALLY ~.*[ %TAB%]MAGESCHOOL_INVOKER[ %TAB%]*~     ~0x0800 MAGESCHOOL_INVOKER~
+	REPLACE_TEXTUALLY ~.*[ %TAB%]MAGESCHOOL_NECROMANCER[ %TAB%]*~ ~0x1000 MAGESCHOOL_NECROMANCER~
+	REPLACE_TEXTUALLY ~.*[ %TAB%]MAGESCHOOL_TRANSMUTER[ %TAB%]*~  ~0x2000 MAGESCHOOL_TRANSMUTER~
+	REPLACE_TEXTUALLY ~.*[ %TAB%]MAGESCHOOL_GENERALIST[ %TAB%]*~  ~0x4000 MAGESCHOOL_GENERALIST~
+	REPLACE_TEXTUALLY ~.*[ %TAB%]FERALAN[ %TAB%]*~                ~0x4007 FERALAN~
+	REPLACE_TEXTUALLY ~.*[ %TAB%]STALKER[ %TAB%]*~                ~0x4008 STALKER~
+	REPLACE_TEXTUALLY ~.*[ %TAB%]BEASTMASTER[ %TAB%]*~            ~0x4009 BEASTMASTER~
+	REPLACE_TEXTUALLY ~.*[ %TAB%]ASSASIN[ %TAB%]*~                ~0x400A ASSASIN~
+	REPLACE_TEXTUALLY ~.*[ %TAB%]BOUNTYHUNTER[ %TAB%]*~           ~0x400B BOUNTYHUNTER~
+	REPLACE_TEXTUALLY ~.*[ %TAB%]SWASHBUCKLER[ %TAB%]*~           ~0x400C SWASHBUCKLER~
+	REPLACE_TEXTUALLY ~.*[ %TAB%]BLADE[ %TAB%]*~                  ~0x400D BLADE~
+	REPLACE_TEXTUALLY ~.*[ %TAB%]JESTER[ %TAB%]*~                 ~0x400E JESTER~
+	REPLACE_TEXTUALLY ~.*[ %TAB%]SKALD[ %TAB%]*~                  ~0x400F SKALD~
+	REPLACE_TEXTUALLY ~.*[ %TAB%]GODTALOS[ %TAB%]*~               ~0x4013 GODTALOS~
+	REPLACE_TEXTUALLY ~.*[ %TAB%]GODHELM[ %TAB%]*~                ~0x4014 GODHELM~
+	REPLACE_TEXTUALLY ~.*[ %TAB%]GODLATHANDER[ %TAB%]*~           ~0x4015 GODLATHANDER~
+	REPLACE_TEXTUALLY ~.*[ %TAB%]TOTEMIC[ %TAB%]*~                ~0x4010 TOTEMIC~
+	REPLACE_TEXTUALLY ~.*[ %TAB%]SHAPESHIFTER[ %TAB%]*~           ~0x4011 SHAPESHIFTER~
+	REPLACE_TEXTUALLY ~.*[ %TAB%]BEASTFRIEND[ %TAB%]*~            ~0x4012 BEASTFRIEND~
+	REPLACE_TEXTUALLY ~.*[ %TAB%]BARBARIAN[ %TAB%]*~              ~0x40000000 BARBARIAN~
+	REPLACE_TEXTUALLY ~.*[ %TAB%]WILDMAGE[ %TAB%]*~               ~0x80000000 WILDMAGE~
+BUT_ONLY_IF_IT_CHANGES
+
+// Adds CD_STATE_NOTVALID state
+APPEND ~STATE.IDS~ ~0x80101FEF CD_STATE_NOTVALID~
+UNLESS ~CD_STATE_NOTVALID~
+
+//Bams
+COPY ~Pirate/bams/QQABOB.bam~ ~override~
+COPY ~Pirate/bams/QQABOC.bam~ ~override~
+
+COPY ~Pirate/bams/QQFKUOTB.bam~ ~override~
+COPY ~Pirate/bams/QQFKUOTC.bam~ ~override~
+
+COPY ~Pirate/bams/QQPIRATB.bam~ ~override~
+COPY ~Pirate/bams/QQPIRATC.bam~ ~override~
+
+COPY ~Pirate/bams/QQAKKHB.bam~ ~override~
+COPY ~Pirate/bams/QQAKKHC.bam~ ~override~
+
+COPY ~Pirate/bams/QQPIR.bam~ ~override~
+COPY ~Pirate/bams/QQCPIRB.bam~ ~override~
+
+COPY ~Pirate/bams/QQPEB.bam~ ~override~
+COPY ~Pirate/bams/QQCPEB.bam~ ~override~
+
+COPY ~Pirate/bams/QQCOF.bam~ ~override~
+COPY ~Pirate/bams/QQCCOF.bam~ ~override~
+
+COPY ~Pirate/bams/QQCROCB.bam~ ~override~
+
+COPY ~Pirate/bams/QQCMAZT.bam~ ~override~
+
+COPY ~Pirate/bams/QQFRUT.bam~ ~override~
+COPY ~Pirate/bams/QQCFRUTB.bam~ ~override~
+
+COPY ~Pirate/bams/QQMINE.bam~ ~override~
+COPY ~Pirate/bams/QQCMINEB.bam~ ~override~
+
+COPY ~Pirate/bams/QQCLER.bam~ ~override~
+COPY ~Pirate/bams/QQCCLERB.bam~ ~override~
+
+COPY ~Pirate/bams/QQHALR.bam~ ~override~
+COPY ~Pirate/bams/QQHALRUA.bam~ ~override~
+
+COPY ~Pirate/bams/QQTRI.bam~ ~override~
+COPY ~Pirate/bams/QQCTRIB.bam~ ~override~
+
+COPY ~Pirate/bams/QQMASK.bam~ ~override~
+COPY ~Pirate/bams/QQCMASKB.bam~ ~override~
+
+//CRE
+COPY ~Pirate/creatures/QQFKUOT.cre~ ~override~
+SAY NAME1 @1
+SAY NAME2 @1
+
+COPY ~Pirate/creatures/QQPIRAT.cre~ ~override~
+SAY NAME1 @2
+SAY NAME2 @2
+
+COPY ~Pirate/creatures/QQPIRA2.cre~ ~override~
+SAY NAME1 @3
+SAY NAME2 @3
+
+COPY ~Pirate/creatures/QQAKKH.cre~ ~override~
+SAY NAME1 @4
+SAY NAME2 @4
+
+COPY ~Pirate/creatures/QQESCOF.cre~ ~override~
+SAY NAME1 @5
+SAY NAME2 @5
+
+COPY ~Pirate/creatures/QQINVPER.cre~ ~override~
+SAY NAME1 @6
+SAY NAME2 @6
+
+COPY ~Pirate/creatures/QQINVP2.cre~ ~override~
+SAY NAME1 @6
+SAY NAME2 @6
+
+COPY ~Pirate/creatures/QQINVP3.cre~ ~override~
+SAY NAME1 @6
+SAY NAME2 @6
+
+
+//SPL
+COPY ~Pirate/spells/QQHAND.SPL~ ~override~
+SAY NAME1 @7
+SAY NAME2 @7
+SAY 0xce @70
+
+COPY ~Pirate/spells/QQCLARM.SPL~ ~override~
+SAY NAME1 @71
+SAY NAME2 @71
+
+COPY ~Pirate/spells/QQDISP.SPL~ ~override~
+SAY NAME1 @73
+SAY NAME2 @73
+SAY 0x9e @72
+
+COPY ~Pirate/spells/QQMAL.SPL~ ~override~
+SAY NAME1 @8
+SAY NAME2 @8
+
+COPY ~Pirate/spells/QQMAL2.SPL~ ~override~
+SAY NAME1 @8
+SAY NAME2 @8
+
+COPY ~Pirate/spells/QQLUCK.SPL~ ~override~
+SAY NAME1 @9
+SAY NAME2 @9
+
+COPY ~Pirate/spells/QQABO.SPL~ ~override~
+SAY NAME1 @10
+SAY NAME2 @10
+
+COPY ~Pirate/spells/QQFKUOT.SPL~ ~override~
+SAY NAME1 @11
+SAY NAME2 @11
+
+COPY ~Pirate/spells/QQPIRAT.SPL~ ~override~
+SAY NAME1 @12
+SAY NAME2 @12
+SAY 0x1b6 @122
+
+COPY ~Pirate/spells/QQAKKH.spl~ ~override~
+SAY NAME1 @13
+SAY NAME2 @13
+
+COPY ~Pirate/spells/QQPERR.spl~ ~override~
+SAY NAME1 @14
+SAY NAME2 @14
+
+COPY ~Pirate/spells/QQCOF.spl~ ~override~
+SAY NAME1 @15
+SAY NAME2 @15
+
+//Sounds
+COPY ~Pirate/sounds/QQPERR.wav~ ~override~
+COPY ~Pirate/sounds/QQPERR2.wav~ ~override~
+COPY ~Pirate/sounds/QQPERR3.wav~ ~override~
+COPY ~Pirate/sounds/QQPERR4.wav~ ~override~
+COPY ~Pirate/sounds/QQPERR5.wav~ ~override~
+COPY ~Pirate/sounds/QQPARROT.wav~ ~override~
+
+//ITM
+COPY ~Pirate/items/QQPERR.itm~ ~override~
+SAY NAME1 @6
+SAY NAME2 @6
+SAY IDENTIFIED_DESC @676
+
+COPY ~Pirate/items/QQCOF.itm~ ~override~
+SAY NAME1 @17
+SAY NAME2 @17
+SAY IDENTIFIED_DESC @170
+
+COPY ~Pirate/items/QQNOHAND.itm~ ~override~
+SAY NAME1 @18
+SAY NAME2 @18
+SAY IDENTIFIED_DESC @181
+
+COPY ~Pirate/items/QQMIS6I.itm~ ~override~
+SAY NAME1 @171
+SAY NAME2 @171
+SAY IDENTIFIED_DESC @172
+
+COPY ~Pirate/items/QQMAZTIC.itm~ ~override~
+SAY NAME1 @460
+SAY NAME2 @461
+SAY UNIDENTIFIED_DESC @4600
+SAY IDENTIFIED_DESC @4601
+
+COPY ~Pirate/items/QQFRUT.itm~ ~override~
+SAY NAME1 @462
+SAY NAME2 @462
+SAY IDENTIFIED_DESC @4602
+
+COPY ~Pirate/items/QQMINE.itm~ ~override~
+SAY NAME1 @463
+SAY NAME2 @463
+SAY IDENTIFIED_DESC @4603
+
+COPY ~Pirate/items/QQCLER.itm~ ~override~
+SAY NAME1 @464
+SAY NAME2 @464
+SAY IDENTIFIED_DESC @4604
+
+COPY ~Pirate/items/QQHALR.itm~ ~override~
+SAY NAME1 @465
+SAY NAME2 @465
+SAY IDENTIFIED_DESC @4605
+
+COPY ~Pirate/items/QQTRI.itm~ ~override~
+SAY NAME1 @466
+SAY NAME2 @466
+SAY IDENTIFIED_DESC @4606
+
+COPY ~Pirate/items/QQMASK.itm~ ~override~
+SAY NAME1 @467
+SAY NAME2 @468
+SAY UNIDENTIFIED_DESC @4607
+SAY IDENTIFIED_DESC @4608
+
+COPY ~Pirate/items/QQPIR.itm~ ~override~
+SAY NAME1 @469
+SAY NAME2 @469
+SAY IDENTIFIED_DESC @4609
+
+//STO
+COPY ~Pirate/stores/QQESCOF.sto~ ~override~
+
+//Portraits
+COPY ~Pirate/pictures/QQCor2L.bmp~ ~portraits~
+COPY ~Pirate/pictures/QQCor2S.bmp~ ~portraits~
+COPY ~Pirate/pictures/QQCor3L.bmp~ ~portraits~
+COPY ~Pirate/pictures/QQCor3S.bmp~ ~portraits~
+COPY ~Pirate/pictures/QQCor4L.bmp~ ~portraits~
+COPY ~Pirate/pictures/QQCor4S.bmp~ ~portraits~
+COPY ~Pirate/pictures/QQCor5L.bmp~ ~portraits~
+COPY ~Pirate/pictures/QQCor5S.bmp~ ~portraits~
+COPY ~Pirate/pictures/QQCor6L.bmp~ ~portraits~
+COPY ~Pirate/pictures/QQCor6S.bmp~ ~portraits~
+COPY ~Pirate/pictures/QQCor7L.bmp~ ~portraits~
+COPY ~Pirate/pictures/QQCor7S.bmp~ ~portraits~
+COPY ~Pirate/pictures/QQCor8L.bmp~ ~portraits~
+COPY ~Pirate/pictures/QQCor8S.bmp~ ~portraits~
+COPY ~Pirate/pictures/QQdwaL.bmp~ ~portraits~
+COPY ~Pirate/pictures/QQdwaS.bmp~ ~portraits~
+COPY ~Pirate/pictures/QQHalfOL.bmp~ ~portraits~
+COPY ~Pirate/pictures/QQHalfOS.bmp~ ~portraits~
+COPY ~Pirate/pictures/QQWomanL.bmp~ ~portraits~
+COPY ~Pirate/pictures/QQWomanS.bmp~ ~portraits~
+COPY ~Pirate/pictures/QQWom2L.bmp~ ~portraits~
+COPY ~Pirate/pictures/QQWom2S.bmp~ ~portraits~
+COPY ~Pirate/pictures/QQElfWL.bmp~ ~portraits~
+COPY ~Pirate/pictures/QQElfWS.bmp~ ~portraits~
+COPY ~Pirate/pictures/QQElfW2L.bmp~ ~portraits~
+COPY ~Pirate/pictures/QQElfW2S.bmp~ ~portraits~
+COPY ~Pirate/pictures/QQZakhaL.bmp~ ~portraits~
+COPY ~Pirate/pictures/QQZakhaS.bmp~ ~portraits~
+COPY ~Pirate/pictures/QQESCOFS.bmp~ ~override~
+COPY ~Pirate/pictures/QQCOCOS.bmp~ ~override~
+
+//Script
+COMPILE ~Pirate/scripts/QQESCOF.baf~
+COMPILE ~Pirate/scripts/QQINVPER.baf~
+COMPILE ~Pirate/scripts/QQINVP2.baf~
+COMPILE ~Pirate/scripts/QQINVP3.baf~
+COMPILE ~Pirate/scripts/QQPIRATE.baf~
+COMPILE ~Pirate/scripts/QQAKKH.baf~
+COMPILE ~Pirate/scripts/QQFKUOT.baf~
+
+// Dialogue .tra
+COMPILE ~Pirate/dialogues/QQESCOF.d~
+COMPILE ~Pirate/dialogues/QQINVPER.d~
+
+ADD_KIT ~QQCORSR~
+
+// CLASWEAP.2da
+~QQCORSR     1    1    1    0    0    1    0    0~
+
+// Spécialiste du maniement du cimeterre(WEAPPROF.2da)
+~QQCORSR 0 1 0 0 1 0 0 0 0 1 1 0 0 1 5 1 0 1 0 0 0 0 1 1 0 0 0 0 1 1 2 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~
+
+// Minimum 17 en CONS et 11 en FOR
+~QQCORSR 11 0 17 0 0 0~
+
+// Malus de -4 en CHA
+~QQCORSR 0 0 0 0 0 -4~
+
+~QQCORSR 0 14 0 0 0 0~
+
+~QQCORSR 0 14 0 0 0 0~
+
+// Ne peut pas être loyal ni neutre-bon
+~QQCORSR 0 0 0 0 1 1 1 1 1~
+
+// Aucune possibilité de jumelage
+~QQCORSR 0 0 0 0 0 0~
+
+~Pirate/2da/QQCLABCO.2da~
+
+// KITTABLE.2da
+~K_T_H K_T_D K_T_G K_T_E K_T_HE K_T_HL K_T_HO~
+
+~0x00010001 4~
+
+// LUABBR.2da
+~Fi0~
+
+~LEAT14 * * BAG28 RING06 RING05,10 * BOOT02 AMUL19 BRAC16 BELT06 AROW11,40 BULL03,40 BOLT06,40 QQCOF QQPERR * DAGG12 SW1H28 STAF08~
+
+SAY @19
+
+SAY @20
+
+SAY @21
+
+ACTION_IF GAME_IS ~BGEE BG2EE IWDEE EET~ THEN BEGIN
+	LAF fl#add_kit_ee STR_VAR kit_name = QQCORSR END
+END
+
+//Objets du kit dans BGT, SOA et TOB
+EXTEND_BOTTOM ~AR0602.bcs~ ~Pirate/Scripts/QQITEM0.baf~
+EXTEND_TOP ~AR0015.bcs~ ~Pirate/Scripts/QQITEM1.baf~
+EXTEND_TOP ~BALDUR.bcs~ ~Pirate/Scripts/QQITEM2.baf~
+EXTEND_TOP ~AR4000.bcs~ ~Pirate/Scripts/QQITEM2.baf~
+EXTEND_TOP ~CESPEN.bcs~ ~Pirate/Scripts/QQITEM2.baf~
+EXTEND_TOP ~DPLAYER3.bcs~ ~Pirate/Scripts/QQPTIME.baf~
+
+//Race du Perroquet
+BEGIN @1061
+SUBCOMPONENT @1060
+REQUIRE_COMPONENT ~Setup-Pirate.tp2~ ~0~ @1000
+COPY ~Pirate/pictures/QQCOCO2S.bmp~ ~override/QQCOCOS.bmp~
+COPY ~Pirate/bams/bams2/QQPEB.bam~ ~override~
+COPY ~Pirate/items/QQPERR.itm~ ~override~
+SAY NAME1 @6
+SAY NAME2 @6
+SAY IDENTIFIED_DESC @676
+BEGIN @1062
+SUBCOMPONENT @1060
+REQUIRE_COMPONENT ~Setup-Pirate.tp2~ ~0~ @1000
+
+
+//Dons régionaux
+BEGIN @10000
+SUBCOMPONENT @9999
+REQUIRE_COMPONENT ~Setup-Pirate.tp2~ ~0~ @1000
+COMPILE ~Pirate/scripts/scripts2/QQINVP3.baf~
+BEGIN @10001
+SUBCOMPONENT @9999
+REQUIRE_COMPONENT ~Setup-Pirate.tp2~ ~0~ @1000
+COPY ~Pirate/spells/spells2/QQWIZRS.spl~ ~override~
+BEGIN @10002
+SUBCOMPONENT @9999
+REQUIRE_COMPONENT ~Setup-Pirate.tp2~ ~0~ @1000
+COPY ~Pirate/spells/spells3/QQWIZRS.spl~ ~override~
+BEGIN @10003
+SUBCOMPONENT @9999
+REQUIRE_COMPONENT ~Setup-Pirate.tp2~ ~0~ @1000
+EXTEND_TOP ~DPLAYER3.bcs~ ~Pirate/Scripts/QQZAKHAR.baf~
+COPY ~Pirate/items/items2/QQSW1H20.itm~ ~override~
+SAY NAME1 @10034
+SAY NAME2 @10034
+SAY IDENTIFIED_DESC @10033

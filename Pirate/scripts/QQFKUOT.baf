@@ -1,0 +1,14 @@
+IF
+Global("QQKUOCONV","GLOBAL",0)
+THEN
+RESPONSE #100
+DisplayStringHead(Player1,@6001)
+SetGlobal("QQKUOCONV","GLOBAL",1)
+RESPONSE #100
+DisplayStringHead(Player1,@6002)
+SetGlobal("QQKUOCONV","GLOBAL",1)
+RESPONSE #100
+DisplayStringHead(Player1,@6003)
+SetGlobal("QQKUOCONV","GLOBAL",1)
+END
+
