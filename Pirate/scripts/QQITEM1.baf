@@ -1,4 +1,4 @@
-//Ajouter Coco au début de BGT
+//Ajouter Coco au début de BGT / EET
 IF
 Global("QQverifCocoBGT","GLOBAL",0)
 Kit(Player1,QQCORSR)
@@ -18,7 +18,7 @@ SetGlobal("QQverifCocoBGT","GLOBAL",2)
 Continue()
 END
 
-//Ajouter le coffre au début de BGT
+//Ajouter le coffre au début de BGT / EET
 IF
 Global("QQverifCofBGT","GLOBAL",0)
 Kit(Player1,QQCORSR)
